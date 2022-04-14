@@ -102,4 +102,10 @@ int main()
 }
 ```
 
+
+
+Equation এর ক্ষেত্রে  **post-increment operator** আগে value **** কে Equation এ পাঠায়, তারপর ভ্যালু increment হবে।  যেমন- `a=5, b=5` হলে `a+++b` এর আউটপুট হবে 10.&#x20;
+
+![](<.gitbook/assets/Screenshot from 2022-04-14 18-08-35 (1).png>)
+
 </details>
