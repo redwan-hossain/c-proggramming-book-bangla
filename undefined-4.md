@@ -43,16 +43,16 @@ rvalue তে কোনোরকম data store করার সক্ষমত�
   
 int main()  
 {  
-    int a = 5;  
-		int x;
+  int a = 5;  
+  int x;
   
     x = a++;  
   
     printf("x = %d\n", x); 
 		
-		// output x = 5, not 6 
+    // output x = 5, not 6 
   
-    return 0;  
+  return 0;  
 }
 ```
 
@@ -65,17 +65,17 @@ int main()
   
 int main()  
 {  
-    int a = 5;  
-		int x;
+  int a = 5;  
+  int x;
   
     x = ++a;  
   
     printf("x = %d\n", x); 
 		
-		// output x = 6, not 5
+    // output x = 6, not 5
   
-    return 0;  
-}c
+   return 0;  
+}
 ```
 
 </details>
