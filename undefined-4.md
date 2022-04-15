@@ -134,11 +134,25 @@ Equation এর ক্ষেত্রে  **pre-increment operator** আগে �
 
 ![](<.gitbook/assets/Screenshot from 2022-04-15 17-19-06.png>)
 
-#### Shorthand:
+#### Shorthand (Arithmetic Assignment Operators)
+
+আগে (যোগ/বিয়োগ/গুণ/ভাগ) করো, তারপর R value কে L value তে assign করো।
 
 ![](<.gitbook/assets/Screenshot from 2022-04-15 17-23-23.png>)
 
 ![](<.gitbook/assets/Screenshot from 2022-04-15 17-25-56.png>)
+
+
+
+</details>
+
+<details>
+
+<summary>Cast Operator <code>( )</code></summary>
+
+Cast Operator `( )`  convert values from one type to another explicitly
+
+`(type_name) expression`
 
 
 
