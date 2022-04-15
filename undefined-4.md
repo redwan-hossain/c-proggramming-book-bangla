@@ -127,3 +127,19 @@ Equation এর ক্ষেত্রে  **pre-increment operator** আগে �
 যেমন- `a=5, b=5` হলে `a+++b` এর আউটপুট হবে 10.
 
 </details>
+
+<details>
+
+<summary>Assignment Operator</summary>
+
+![](<.gitbook/assets/Screenshot from 2022-04-15 17-19-06.png>)
+
+#### Shorthand:
+
+![](<.gitbook/assets/Screenshot from 2022-04-15 17-23-23.png>)
+
+![](<.gitbook/assets/Screenshot from 2022-04-15 17-25-56.png>)
+
+
+
+</details>
