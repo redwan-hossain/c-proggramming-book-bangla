@@ -52,11 +52,13 @@ Examples- ', ' ';' etc
 
 <summary>Arithmetic operator <mark style="color:orange;"><code>+ - * / %</code><code>⁠</code></mark></summary>
 
+![](.gitbook/assets/qqq.png)
+
 `*` `/` `%` এর অগ্রাধিকার (precedence) বেশি ( associativity বাম থেকে ডানে), এরপরের সিরিয়ালে আসবে `+` `-` (associativity বাম থেকে ডানে)। precedence একই লেভেলের হলে associativity দিয়ে হিসাব হয়। `*` `/` `%` এরা একই লেভেলের, এদের মধ্যে যে বামদিকে আসবে তার কাজই আগে হবে।
 
-`/` এর মাধ্যমে Quotient বের হয়, `%` এর মাধ্যমে Remainder(ভাগশেষ বের হয়।
+`/` এর মাধ্যমে Quotient(ভাগফল) বের হয়, `%` এর মাধ্যমে Remainder(ভাগশেষ) বের হয়।
 
-`%` Remainder Operator শুধুমাত্র int এর জন্য  প্রযোজ্য।&#x20;
+`%` modulus operator শুধুমাত্র int এর জন্য প্রযোজ্য। modulus means the remainder part of integer division.
 
 </details>
 
