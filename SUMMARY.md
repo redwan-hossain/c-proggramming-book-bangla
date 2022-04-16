@@ -6,4 +6,4 @@
 * [ভ্যারিয়েবল সমাচার](undefined-3.md)
 * [টাইপ কনভার্সন](undefined-4.md)
 * [অপারেটর](undefined-5.md)
-* [if, else, else if, switch statement](if-else-else-if-switch-statement.md)
+* [if, else, else if, switch..case statement](if-else-else-if-switch..case-statement.md)
