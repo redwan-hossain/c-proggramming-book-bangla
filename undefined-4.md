@@ -150,9 +150,9 @@ Equation এর ক্ষেত্রে  **pre-increment operator** আগে �
 
 <summary>Cast Operator <code>( )</code></summary>
 
-Cast Operator `( )`  convert values from one type to another explicitly
+Cast Operator `( )`  দিয়ে explicit ভাবে একটা ডাটা টাইপ থেকে অন্য একটা ডাটা টাইপে কনভার্সন করা যায়।&#x20;
 
-`(type_name) expression`
+`(type_name) expression` হলো এর সিনট্যাক্স।
 
 
 
