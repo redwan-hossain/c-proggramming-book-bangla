@@ -4,5 +4,6 @@
 * [বেসিক সিনট্যাক্স](undefined-1.md)
 * [ডাটা টাইপ](undefined-2.md)
 * [ভ্যারিয়েবল সমাচার](undefined-3.md)
-* [অপারেটর](undefined-4.md)
-* [টাইপ কনভার্সন](undefined-5.md)
+* [টাইপ কনভার্সন](undefined-4.md)
+* [অপারেটর](undefined-5.md)
+* [if, else, else if, switch statement](if-else-else-if-switch-statement.md)
