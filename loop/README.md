@@ -2,7 +2,7 @@
 
 একই কাজ বার বার করাকে প্রোগ্রামিং এর ভাষায় loop বলে। একটা কন্ডিশন যতক্ষণ না মিথ্যা হবে ততক্ষণ একটা loop চলতেই থাকে এবং প্রতিবার loop রিপিট হওয়াকে iteration বলা হয়।  &#x20;
 
-`initialization statement`_`-`_` ``test expression- update statement` এটা একটা loop এর প্রধান প্রসেস।&#x20;
+&#x20;`initialization statement- test expression- update statement` এটা একটা loop এর প্রধান প্রসেস।&#x20;
 
 ```c
 i = 1;   // এখান থেকে initialize হবে। এটাকে iterator বলে।
