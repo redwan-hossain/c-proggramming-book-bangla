@@ -5,6 +5,7 @@
 * [data type](data-type.md)
 * [variable](variable/README.md)
   * [boolean](variable/boolean.md)
+  * [variable scope](variable/variable-scope.md)
 * [type conversion/casting](type-conversion-casting.md)
 * [operator](operator.md)
 * [if, else, else if, switch..case statement](if-else-else-if-switch..case-statement.md)
