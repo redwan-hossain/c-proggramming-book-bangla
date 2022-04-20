@@ -1,5 +1,7 @@
 # while loop
 
+নামতা লেখার প্রোগ্রাম-&#x20;
+
 ```c
 #include <stdio.h>
 
