@@ -21,3 +21,67 @@ int main() {
   return 0;
 }
 ```
+
+n থেকে n জোড় সংখ্যার যোগফল বের করার প্রোগ্রাম-
+
+```c
+#include <stdio.h>
+int main() {
+  int start, upto, sum = 0;
+
+  printf("Enter a number: ");
+  scanf("%d", &start);
+
+  printf("Upto: ");
+  scanf("%d", &upto);
+
+  if (start % 2 != 0) {
+    printf("You have entered an odd number.");
+    start += 1;
+    printf(" the immediate even number is: %d \n", start);
+    while (start <= upto) {
+      sum = sum + start;
+      start = start + 2;
+    }
+  } else {
+    while (start <= upto) {
+      sum = sum + start;
+      start = start + 2;
+    }
+  }
+  printf("Sum is: %d \n", sum);
+  return 0;
+}
+```
+
+n থেকে n বিজোড় সংখ্যার যোগফল বের করার প্রোগ্রাম--
+
+```c
+#include <stdio.h>
+int main() {
+  int start, upto, sum = 0;
+
+  printf("Enter a number: ");
+  scanf("%d", &start);
+
+  printf("Upto: ");
+  scanf("%d", &upto);
+
+  if (start % 2 != 1) {
+    printf("You have entered an even number.");
+    start += 1;
+    printf(" the immediate odd number is: %d \n", start);
+    while (start <= upto) {
+      sum = sum + start;
+      start = start + 2;
+    }
+  } else {
+    while (start <= upto) {
+      sum = sum + start;
+      start = start + 2;
+    }
+  }
+  printf("Sum is: %d \n", sum);
+  return 0;
+}
+```
