@@ -7,6 +7,7 @@
   * [boolean](variable/boolean.md)
   * [variable scope](variable/variable-scope.md)
   * [type conversion/casting](variable/type-conversion-casting.md)
+  * [variable scanning](variable/variable-scanning.md)
 * [operator](operator.md)
 * [if, else, else if, switch..case statement](if-else-else-if-switch..case-statement.md)
 * [loop](loop/README.md)
