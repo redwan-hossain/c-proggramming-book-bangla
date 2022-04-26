@@ -14,3 +14,24 @@
 উত্তর = 20, 14 নয়, কারণ ( ) এর precedence সবচেয়ে বেশি।
 ```
 
+{% file src="../.gitbook/assets/Precedence.pdf" %}
+
+একটা  প্রবলেম সলভ করা যাক। নিচের কোডের আউটপুট কি হবে? &#x20;
+
+```c
+#include <stdio.h>
+int main() {
+  int a = 10, b = 20, c = 30, d = 40;
+
+  if (a <= b == d > c) {
+    printf("True\n");
+
+  } else {
+    printf("False\n");
+  }
+
+  return 0;
+}
+```
+
+আউটপুট হবে True, কারণ `==` এর চেয়ে অন্য অপারেটর গুলোর precedence বেশি, `a <= b` এটা সত্য, একইভাবে `d > c` এটাও সত্য। `true==true` বা `1==1`, একারণে আউটপুট হবে True.
