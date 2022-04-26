@@ -1,4 +1,4 @@
-# অপারেটর
+# operator
 
 <details>
 
@@ -44,7 +44,7 @@ Examples- '+', '++', '-' etc.
 Examples- ', ' ';' etc
 ```
 
-<img src=".gitbook/assets/Screenshot from 2022-04-14 16-56-46.png" alt="" data-size="original">
+<img src="../.gitbook/assets/Screenshot from 2022-04-14 16-56-46.png" alt="" data-size="original">
 
 </details>
 
@@ -64,7 +64,7 @@ Cast Operator `( )`  দিয়ে explicit ভাবে একটা ডাট�
 
 <summary>Arithmetic operator <mark style="color:orange;"><code>+ - * / %</code><code>⁠</code></mark></summary>
 
-![](.gitbook/assets/qqq.png)
+![](../.gitbook/assets/qqq.png)
 
 `*` `/` `%` এর অগ্রাধিকার (precedence) বেশি ( associativity বাম থেকে ডানে), এরপরের সিরিয়ালে আসবে `+` `-` (associativity বাম থেকে ডানে)। precedence একই লেভেলের হলে associativity দিয়ে হিসাব হয়। `*` `/` `%` এরা একই লেভেলের, এদের মধ্যে যে বামদিকে আসবে তার কাজই আগে হবে।
 
@@ -128,9 +128,9 @@ int main()
 
 Equation এর ক্ষেত্রে  **post-increment operator** আগে value **** কে Equation এ পাঠায়, তারপর ভ্যালু increment হবে।  যেমন- `a=5, b=5` হলে `a+++b` এর আউটপুট হবে 10.&#x20;
 
-![](.gitbook/assets/1.png)
+![](../.gitbook/assets/1.png)
 
-<img src=".gitbook/assets/Screenshot from 2022-04-14 18-08-35.png" alt="" data-size="original">
+<img src="../.gitbook/assets/Screenshot from 2022-04-14 18-08-35.png" alt="" data-size="original">
 
 
 
@@ -144,7 +144,7 @@ Equation এর ক্ষেত্রে  **pre-increment operator** আগে �
 
 <summary>Assignment Operator</summary>
 
-![](<.gitbook/assets/Screenshot from 2022-04-15 17-19-06.png>)
+![](<../.gitbook/assets/Screenshot from 2022-04-15 17-19-06.png>)
 
 এটা দিয়ে variable এ value assign করার সময় lvalue এবং rvalue খেয়াল রাখতে হয়।
 
@@ -154,9 +154,9 @@ Equation এর ক্ষেত্রে  **pre-increment operator** আগে �
 
 আগে (যোগ/বিয়োগ/গুণ/ভাগ) করো, তারপর R value কে L value তে assign করো।
 
-![](<.gitbook/assets/Screenshot from 2022-04-15 17-23-23.png>)
+![](<../.gitbook/assets/Screenshot from 2022-04-15 17-23-23.png>)
 
-![](<.gitbook/assets/Screenshot from 2022-04-15 17-25-56.png>)
+![](<../.gitbook/assets/Screenshot from 2022-04-15 17-25-56.png>)
 
 
 
@@ -166,7 +166,7 @@ Equation এর ক্ষেত্রে  **pre-increment operator** আগে �
 
 <summary>Logical Operator <code>&#x26;&#x26; || !</code></summary>
 
-![](.gitbook/assets/logical-op.png)
+![](../.gitbook/assets/logical-op.png)
 
 && এবং || কমপক্ষে দুইটা কন্ডিশনকে combine করে, তাই এরা বাইনারী operator। `&&` এর বেলায় দুইটা কন্ডিশনই সত্য কিনা যাচাই করা হয়। যখনই একটা কন্ডিশন false পাবে, এরপরের কন্ডিশন আর evaluate করা হবেনা, একে short circuit বলে। && এর দুইপাশে দুইটা কন্ডিশন না হয়ে যদি একটা expression থাকে এবং যদি এটার ভ্যালু শূন্য এর বেশি হয়, তাহলে expression হওয়া সত্ত্বেও আউটপুট true হবে।&#x20;
 
@@ -176,7 +176,7 @@ Equation এর ক্ষেত্রে  **pre-increment operator** আগে �
 
 true, false এর আউটপুট বুলিয়ানে হয়, true= 1, false= 0
 
-![](.gitbook/assets/not-op.png)
+![](../.gitbook/assets/not-op.png)
 
 </details>
 
@@ -184,7 +184,7 @@ true, false এর আউটপুট বুলিয়ানে হয়, true= 1, 
 
 <summary>Relational Operator <code>== != &#x3C;= >= &#x3C; ></code></summary>
 
-![](.gitbook/assets/relational-op.png)
+![](../.gitbook/assets/relational-op.png)
 
 এদের সবারই দুইটা operand লাগে তাই এরা বাইনারী operator.  এরা হয় true নয়তো false আউটপুট দিবে। তাই দুইটা value সত্য নাকি মিথ্যা সেটা বের করতে এই operator ব্যবহার করা হয়।
 
