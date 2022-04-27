@@ -1,18 +1,24 @@
 # operator
 
-<details>
-
-<summary> বেসিক  </summary>
-
-operator এর কাজ হলো operand এর উপর বিভিন্ন অপারেশন চালানো। a+b⁠ এখানে a এবং b হলো operand, + হলো operator. operand এবং operator মিলে যে কাজ করে তাকে expression বলে। C তে প্রতিটা expression এর শেষে সেমিকোলন দিতে হয়। সাধারণত expression এর মাধ্যমে variable এ ভ্যালু store করা হয়। expression এর আউটপুট constant ভ্যালু হয়।
+operator এর কাজ হলো operand এর উপর বিভিন্ন অপারেশন চালানো। `a+b`⁠ এখানে `a` এবং `b` হলো operand, `+` হলো operator. operand এবং operator মিলে যে কাজ করে তাকে expression বলে। C তে প্রতিটা expression এর শেষে সেমিকোলন দিতে হয়। সাধারণত expression এর মাধ্যমে variable এ ভ্যালু store করা হয়,  এবং expression এর আউটপুট constant ভ্যালু হয়।
 
 &#x20;একটা expression নিজেও operand হতে পারে। যেমন- `(4-3) + (2-1)`
 
-`<operand> <operator> <operand>`এই সিনট্যাক্স কে infix বলে।
+`<operand> <operator> <operand>`এই সিনট্যাক্স কে infix বলে। এটা binary operator এর ফরম্যাট। &#x20;
 
-``
+`<operator> <operand>`এই সিনট্যাক্স কে prefix বলে। এটা unary operator এর ফরম্যাট। &#x20;
 
-</details>
+`<operand> <operator>`এই সিনট্যাক্স কে postfix বলে। এটাও unary operator এর ফরম্যাট। &#x20;
+
+কোন expression এর operand গুলো ভিন্ন ধরনের ডাটা টাইপ নিয়ে গঠিত হলে অর্থাৎ mixed expression হলে সাধারণত যে operand এর ডাটা সাইজ বেশি ফলাফল সেটাতে কনভার্ট হয়ে যায় অর্থাৎ data widening হয়। যেমন:&#x20;
+
+```c
+char + int = int
+double + int = double
+long int - int = long int
+```
+
+
 
 <details>
 
@@ -45,32 +51,6 @@ Examples- ', ' ';' etc
 ```
 
 <img src="../.gitbook/assets/Screenshot from 2022-04-14 16-56-46.png" alt="" data-size="original">
-
-</details>
-
-<details>
-
-<summary>Cast Operator <code>( )</code></summary>
-
-Cast Operator `( )`  দিয়ে explicit ভাবে একটা ডাটা টাইপ থেকে অন্য একটা ডাটা টাইপে কনভার্সন করা যায়।&#x20;
-
-`(type_name) expression` হলো এর সিনট্যাক্স।
-
-
-
-</details>
-
-<details>
-
-<summary>Arithmetic operator <mark style="color:orange;"><code>+ - * / %</code><code>⁠</code></mark></summary>
-
-![](../.gitbook/assets/qqq.png)
-
-`*` `/` `%` এর অগ্রাধিকার (precedence) বেশি ( associativity বাম থেকে ডানে), এরপরের সিরিয়ালে আসবে `+` `-` (associativity বাম থেকে ডানে)। precedence একই লেভেলের হলে associativity দিয়ে হিসাব হয়। `*` `/` `%` এরা একই লেভেলের, এদের মধ্যে যে বামদিকে আসবে তার কাজই আগে হবে।
-
-`/` এর মাধ্যমে Quotient(ভাগফল) বের হয়, `%` এর মাধ্যমে Remainder(ভাগশেষ) বের হয়।
-
-`%` modulus operator শুধুমাত্র int এর জন্য প্রযোজ্য। modulus means the remainder part of integer division.
 
 </details>
 

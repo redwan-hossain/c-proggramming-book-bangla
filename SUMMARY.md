@@ -9,6 +9,8 @@
   * [type conversion/casting](variable/type-conversion-casting.md)
   * [variable scanning](variable/variable-scanning.md)
 * [operator](operator/README.md)
+  * [type casting operator ( )](operator/type-casting-operator.md)
+  * [arithmetic operator](operator/arithmetic-operator.md)
   * [Operator precedence and associativity](operator/operator-precedence-and-associativity.md)
 * [if, else, else if, switch..case statement](if-else-else-if-switch..case-statement.md)
 * [loop](loop/README.md)
