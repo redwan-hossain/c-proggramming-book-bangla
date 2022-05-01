@@ -14,6 +14,7 @@
   * [Relational Operator](operator/relational-operator.md)
   * [Operator precedence and associativity](operator/operator-precedence-and-associativity.md)
   * [logical operator](operator/logical-operator.md)
+  * [conditional operator](operator/conditional-operator.md)
 * [if, else, else if, switch..case statement](if-else-else-if-switch..case-statement.md)
 * [loop](loop/README.md)
   * [while loop](loop/while-loop.md)
