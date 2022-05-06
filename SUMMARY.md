@@ -21,3 +21,4 @@
   * [for loop](loop/for-loop.md)
   * [do while loop](loop/do-while-loop.md)
   * [Loop Control Statements (break and continue)](loop/loop-control-statements-break-and-continue.md)
+  * [nested loop](loop/nested-loop.md)
