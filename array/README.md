@@ -25,7 +25,9 @@ sizeof(arr) / sizeof(arr[0])
 // 40/4 = 10
 ```
 
-{% hint style="info" %}
+![](../.gitbook/assets/array\_element\_count.png)
+
+{% hint style="success" %}
 Array দিয়ে N সংখ্যক বিষয়ের এভারেজ মার্ক বের করার প্রোগ্রাম:
 {% endhint %}
 
@@ -52,4 +54,34 @@ int main() {
 
   return 0;
 }
+```
+
+{% hint style="success" %}
+N সংখ্যক নাম্বার ইনপুট নিয়ে রিভার্স অর্ডারে প্রিন্ট করার প্রোগ্রাম:
+{% endhint %}
+
+```c
+#include <stdio.h>
+int result, upto, timer;
+
+int main() {
+  printf("Total sunject: ");
+  scanf("%d", &upto);
+
+  int grade[upto];
+
+  for (timer = 0; timer < upto; timer++) {
+    printf("Digit %d: ", timer + 1);
+    scanf("%d", &grade[timer]);
+  }
+
+  for (timer = upto - 1; timer >= 0; timer--) {
+    printf("%d ", grade[timer]);
+  }
+  
+  printf("\n");
+  
+  return 0;
+}
+
 ```

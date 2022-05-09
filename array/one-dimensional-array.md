@@ -1,5 +1,9 @@
 # one dimensional array
 
+{% hint style="warning" %}
+array initialize বলতে array declare করার পর তার initial ভ্যালু assign করাকে বুঝায়।
+{% endhint %}
+
 {% hint style="info" %}
 One dimensional array initialize করার নিয়ম-
 {% endhint %}
