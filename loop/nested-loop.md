@@ -1,5 +1,30 @@
 # nested loop
 
+nested loop মানে হলো এখানে একটা প্রধান লুপ থাকবে যাকে outer loop বলে, outer loop এর ভেতরে এক বা একাধিক inner loop থাকে। উল্লেখ্য যে, outer loop এর প্রতি iteration বা পুনরাবৃত্তিতে  inner loop প্রতিবার তার সবগুলো iteration বা পুনরাবৃত্তি সম্পন্ন করে। অর্থাৎ,  outer loop যতবার চলবে,  inner loop তার সবগুলো  পুনরাবৃত্তি সম্পন্ন করবে। উদাহরণস্বরূপ নিচের কোডটা দেখা যাক।&#x20;
+
+নিচে timer এবং repeat এই দুইটা variable আমাদের লুপগুলোর প্রাণ। timer variable 1, 2, 3, 4, 5 পর্যন্ত চলবে এবং প্রতিবার repeat variable 1, 2, 3, 4, 5 পর্যন্ত চলবে অর্থাৎ মোট পঁচিশ বার চলবে। outer loop(5) এবং inner loop(25) মিলে মোট ত্রিশ বার লুপ চলবে।
+
+```c
+#include <stdio.h>
+
+int main() {
+
+    int timer, repeat;
+
+
+    for (timer = 1; timer <= 5; timer++) {
+        for (repeat = 1; repeat <= 5; repeat++) {
+            printf("%d ", repeat);
+        }
+        printf("\n");
+
+    }
+    return 0;
+}
+```
+
+
+
 ```c
 #include <stdio.h>
 
