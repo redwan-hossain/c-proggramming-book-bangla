@@ -15,6 +15,24 @@ Array size macros দিয়ে declare করা বেস্ট প্রাক
 `int array1[N]`\
 
 
+array size কে ডায়নামিক করতে চাইলে variable length array ব্যবহার করা যায়। এর মানে হলো array size এর জায়গায় একটা ভেরিয়েবল বসাতে হয় এবং scanf এর সাহায্যে ঐ ভেরিয়েবলের মান নির্ধারণ করলে array এর size টাও ঐ ভেরিয়েবলের সমান হবে। উদাহরণস্বরূপ:
+
+```c
+#include <stdio.h>
+
+
+int main() {
+ 
+   int size;
+  
+  scanf("%d", &size);
+
+  int my_ array[size];
+
+  return 0;
+}
+```
+
 Array size থেকে কম এলিমেন্ট ইনপুট দিলে খালি জায়গাগুলো শূন্য দিয়ে ভরাট হবে। array size থেকে কখনোই বেশি element input দেয়া যাবেনা, এবং array input একদম খালি রাখা যাবেনা, কমপক্ষে একটা input দিতেই হবে।`int array5[10]={0};`এভাবে দিলে বাকি সেল গুলো শূন্য দিয়ে ভরাট হবে।
 
 `sizeof(arr) / sizeof(arr[0])` দিয়ে একটা array এর সাইজ বের করা যায়, যেমন-&#x20;
@@ -83,5 +101,36 @@ int main() {
   
   return 0;
 }
+```
 
+{% hint style="success" %}
+N(upto 93) সংখ্যক ফিবোনাচ্চি সিরিজ বের করার প্রোগ্রাম :
+{% endhint %}
+
+```c
+#include <stdio.h>
+
+int main() {
+  int upto;
+  printf("Total digit: ");
+  scanf("%d", &upto);
+
+  long long fibonacci[upto];
+
+  fibonacci[0] = 0;
+  fibonacci[1] = 1;
+  // the initial 2 values of fibonacci series are 0 and 1
+
+  for (int timer = 2; timer < upto; timer++) {
+    fibonacci[timer] = fibonacci[timer - 1] + fibonacci[timer - 2];
+    // fibonacci means the sum of previous 2 digits
+    // timer - 1 will provide the immediate previous digit
+    // timer - 2 will provide the immediate previous of immediate previous digit
+  }
+  for (int timer = 0; timer < upto; timer++) {
+    printf("%d--> %lld \n", timer + 1, fibonacci[timer]);
+  }
+
+  return 0;
+}
 ```

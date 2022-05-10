@@ -1,6 +1,6 @@
 # one dimensional array
 
-{% hint style="warning" %}
+{% hint style="success" %}
 array initialize বলতে array declare করার পর তার initial ভ্যালু assign করাকে বুঝায়।
 {% endhint %}
 
@@ -16,6 +16,10 @@ int array1[3]= {1,2,3};
 int array2[ ]= {1,2,3};
 //সবথেকে ভালো, কারণ এখানে array size ফিক্সড না।
 ```
+
+{% hint style="danger" %}
+সেকেন্ড ব্র্যাকেটের ভেতর এইভাবে array element initialize করা এটা শুধুমাত্র array declare করার সময় করা যায়, অন্যসময় এভাবে সেকেন্ড ব্র্যাকেট ব্যবহার করা যায় না।
+{% endhint %}
 
 ```c
 int array3[2];
