@@ -45,7 +45,9 @@ sizeof(arr) / sizeof(arr[0])
 
 ![](../.gitbook/assets/array\_element\_count.png)
 
-
+{% hint style="info" %}
+Array তে 1 থেকে 5 সংখ্যাগুলো মোট কত বার আছে সেটা বের করতে চাইলে নিচের মত অনেকগুলো ভেরিয়েবল নিয়ে প্রোগ্রামটা লিখা যায়: &#x20;
+{% endhint %}
 
 
 
@@ -95,7 +97,51 @@ int main() {
 }
 ```
 
+{% hint style="info" %}
+একই পোগ্রাম ভেরিয়েবলের পরিবর্তে একটামাত্র Array দিয়ে কাজটা করে ফেলা যায় যার পোগ্রাম নিচে দেয়া হলো:
+{% endhint %}
 
+```c
+#include <stdio.h>
+
+int users, test;
+int count[6];
+// index 0 is useless because input will be 1-5
+// thats why we need 6 sized array
+
+int main() {
+  printf("Total users: ");
+  scanf("%d", &users);
+
+  int ratings[users];
+
+  for (int i = 0; i < users; i++) {
+    scanf("%d", &ratings[i]);
+  }
+
+  for (int i = 0; i < users; i++) {
+    test = ratings[i];
+
+    // test variable will point the index of count[6] array from 1-5
+    // based on the loop and values of ratings[users] array
+    // count[1]
+    // count[2]
+    // count[3]
+    // count[4]
+    // count[5]
+    count[test] = count[test] + 1;
+  }
+  // when 1 is found, increase count[1] by 1.
+  // again when 1 is found, increase count[1] by 1
+  // count[1]'s value was 1, now it will be 1+1 = 2
+
+  for (int i = 1; i <= 5; i++) {
+    printf("%d -> %d \n", i, count[i]);
+  }
+
+  return 0;
+}
+```
 
 {% hint style="info" %}
 Array এর সব ইলিমেন্ট এর যোগফল বের করার প্রোগ্রাম:
