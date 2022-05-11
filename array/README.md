@@ -45,32 +45,119 @@ sizeof(arr) / sizeof(arr[0])
 
 ![](../.gitbook/assets/array\_element\_count.png)
 
+
+
+
+
+```c
+#include <stdio.h>
+
+int users;
+int one, two, three, four, five;
+
+int main() {
+
+
+    printf("Total users: ");
+    scanf("%d", &users);
+
+    int ratings[users];
+
+    for (int i = 0; i < users; i++) {
+        scanf("%d", &ratings[i]);
+    }
+
+
+    for (int i = 0; i < users; i++) {
+        if (ratings[i] == 1) {
+            one++;
+        }
+        if (ratings[i] == 2) {
+            two++;
+        }
+
+        if (ratings[i] == 3) {
+            three++;
+        }
+        if (ratings[i] == 4) {
+            four++;
+        }
+
+        if (ratings[i] == 5) {
+            five++;
+        }
+    }
+
+
+    printf("%d %d %d %d %d\n", one, two, three, four, five);
+
+    return 0;
+}
+```
+
+
+
+{% hint style="info" %}
+Array এর সব ইলিমেন্ট এর যোগফল বের করার প্রোগ্রাম:
+{% endhint %}
+
+```c
+#include <stdio.h>
+
+int n, timer, sum;
+
+int main() {
+    printf("Total digit: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    for (timer = 0; timer < n; timer++) {
+        printf("Digit %d: ", timer + 1);
+        scanf("%d", &arr[timer]);
+        sum = sum + arr[timer];
+
+    }
+
+    if (sum >= 0) {
+        printf("Total: %d", sum);
+    }
+
+
+    return 0;
+}
+```
+
 {% hint style="success" %}
 Array দিয়ে N সংখ্যক বিষয়ের এভারেজ মার্ক বের করার প্রোগ্রাম:
 {% endhint %}
 
 ```c
 #include <stdio.h>
-int result, upto;
+
+int upto;
+double result;
+//double is used to handle average like 4+5= 9/2= 4.50
 
 int main() {
-  printf("Total sunject: ");
-  scanf("%d", &upto);
+    printf("Total sunject: ");
+    scanf("%d", &upto);
 
-  int grade[upto];
+    int grade[upto];
 
-  for (int timer = 0; timer < upto; timer++) {
- printf("Enter subject %d score: ", timer+1);
-    scanf("%d", &grade[timer]);
-    result = result + grade[timer];
-  }
+    for (int timer = 0; timer < upto; timer++) {
+        printf("Enter subject %d score: ", timer + 1);
+        scanf("%d", &grade[timer]);
+        result = result + grade[timer];
+    }
 
-  if (result > 0) {
-    result = result / upto;
-    printf("Average mark: %d \n", result);
-  }
+    if (result > 0) {
+        result = (double) result / (double) upto;
+        //explicit type casting 
+        printf("Average mark: %lf \n", result);
+    }
 
-  return 0;
+    return 0;
 }
 ```
 
@@ -80,31 +167,39 @@ N সংখ্যক নাম্বার ইনপুট নিয়ে রি�
 
 ```c
 #include <stdio.h>
+
 int result, upto, timer;
 
 int main() {
-  printf("Total sunject: ");
-  scanf("%d", &upto);
+    printf("Total number: ");
+    scanf("%d", &upto);
 
-  int grade[upto];
+    int grade[upto];
 
-  for (timer = 0; timer < upto; timer++) {
-    printf("Digit %d: ", timer + 1);
-    scanf("%d", &grade[timer]);
-  }
+    for (timer = 0; timer < upto; timer++) {
+        printf("Digit %d: ", timer + 1);
+        // +1 ensures the prompt start from digit 1, not 0
+        scanf("%d", &grade[timer]);
+    }
 
-  for (timer = upto - 1; timer >= 0; timer--) {
-    printf("%d ", grade[timer]);
-  }
-  
-  printf("\n");
-  
-  return 0;
+    for (timer = upto - 1; timer >= 0; timer--) {
+
+        // without -1, there will be one extra array element
+        // if array size is 2, the index will be 0 and 1 
+        // without -1, this loop will run at 2, 1, 0
+        // with the -1 hack, this loop will run at 1, 0
+        
+        printf("%d ", grade[timer]);
+    }
+
+    printf("\n");
+
+    return 0;
 }
 ```
 
 {% hint style="success" %}
-N(upto 93) সংখ্যক ফিবোনাচ্চি সিরিজ বের করার প্রোগ্রাম :
+N(up-to 93) সংখ্যক ফিবোনাচ্চি সিরিজ বের করার প্রোগ্রাম :
 {% endhint %}
 
 ```c
