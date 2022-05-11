@@ -24,3 +24,5 @@
   * [nested loop](loop/nested-loop.md)
 * [array](array/README.md)
   * [one dimensional array](array/one-dimensional-array.md)
+* [string](string/README.md)
+  * [taking string input](string/taking-string-input.md)
