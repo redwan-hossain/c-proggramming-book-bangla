@@ -27,3 +27,6 @@
 * [string](string/README.md)
   * [taking string input](string/taking-string-input.md)
   * [counting string length](string/counting-string-length.md)
+  * [copy string to another string](string/copy-string-to-another-string.md)
+  * [concatenation of string](string/concatenation-of-string.md)
+  * [comparing strings](string/comparing-strings.md)
