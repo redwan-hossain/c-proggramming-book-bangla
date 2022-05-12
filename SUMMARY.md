@@ -26,3 +26,4 @@
   * [one dimensional array](array/one-dimensional-array.md)
 * [string](string/README.md)
   * [taking string input](string/taking-string-input.md)
+  * [counting string length](string/counting-string-length.md)
