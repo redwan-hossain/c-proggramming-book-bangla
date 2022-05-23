@@ -2,6 +2,8 @@
 
 Code re-usability, easier debugging, less error prone ইত্যাদি সুবিধার জন্য function ব্যবহার করা হয়।&#x20;
 
+parameter via argument হলো function এর input, return type হলো output.&#x20;
+
 Function call এর সময়কার variable কে argument বলে, অন্যদিকে function declaration এবং definition এর সময়কার variable কে parameter বলে।
 
 ```c

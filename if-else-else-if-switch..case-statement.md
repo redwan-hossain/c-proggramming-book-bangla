@@ -22,5 +22,5 @@
 
 একাধিক statement এর জন্য `{}` দিতে হয়, শুধুমাত্র একটা statement হলে `{}` না দিলেও চলে। if এর পরের immediate statement টা if এর অংশ হিসেবে গণ্য হবে, তারপরের গুলা হবেনা।
 
-![](../.gitbook/assets/curly-b.png)
+![](.gitbook/assets/curly-b.png)
 
