@@ -2,9 +2,27 @@
 
 Code re-usability, easier debugging, less error prone ইত্যাদি সুবিধার জন্য function ব্যবহার করা হয়।&#x20;
 
-parameter via argument হলো function এর input, return type হলো output.&#x20;
+dry- don't repeat yourself এই প্রিন্সিপাল function এর মাধ্যমে implement করা সম্ভব।&#x20;
 
-Function call এর সময়কার variable কে argument বলে, অন্যদিকে function declaration এবং definition এর সময়কার variable কে parameter বলে।
+{% hint style="success" %}
+Function Design:
+{% endhint %}
+
+variable এর মতই function এর একটা identifier বা নাম দিতে হয় এবং naming conventions গুলো variable এর নিয়ম অনুযায়ীই হবে।&#x20;
+
+function দিয়ে কোনো কাজ করিয়ে নেয়ার জন্য তাকে input দিতে হবে, এই input কে parameter বলা হয়।  অন্যভাবে বললে function declaration এবং definition এর সময়কার variable কে parameter বলে।&#x20;
+
+function এর parameter কে function calling এর সময় argument দ্বারা value input দেয়া হয়। তাই Function call এর সময়কার variable কে argument বলে।
+
+&#x20;function দিয়ে কাজ করানোর পর সে একটা ভ্যালু output হিসেবে return করবে, এজন্য function কোন ডাটা টাইপে return করবে সেটাও বলে দিতে হয়।
+
+Function এর ভেতর আউটপুট দেয়া উচিত না, বরং function calling side এ আউটপুট দেয়া উচিত।
+
+&#x20;একটা function কে শুধুমাত্র একটা কাজের জন্যই বরাদ্ধ রাখা উচিত এবং function এর নাম সেই কাজের জন্য অর্থবোধ্য হওয়া উচিত।
+
+
+
+
 
 ```c
 #include <stdio.h>
@@ -41,7 +59,7 @@ int subf(int x, int y) {
 ```
 
 {% hint style="info" %}
-function ব্যবহার করে n তম  triangular number বের করার প্রোগ্রাম:
+function ব্যবহার করে n তম triangular number বের করার প্রোগ্রাম:
 {% endhint %}
 
 ```c
@@ -62,6 +80,33 @@ int main() {
   int num;
   scanf("%d", &num);
   triangular_num(num);
+  // calling the function by passing argument through it
+
+  return 0;
+}
+```
+
+{% hint style="info" %}
+function ব্যবহার করে factorial(upto 65) বের করার প্রোগ্রাম:
+{% endhint %}
+
+```c
+#include <stdio.h>
+
+int factorial(int n) {
+  unsigned long long multiply = 1;
+  for (int i = n; i >= 1; i--) {
+    multiply = multiply * i;
+    // factorial calculator upto 65
+  }
+  printf("%llu\n", multiply);
+  return n;
+}
+
+int main() {
+  int num;
+  scanf("%d", &num);
+  factorial(num);
   // calling the function by passing argument through it
 
   return 0;
