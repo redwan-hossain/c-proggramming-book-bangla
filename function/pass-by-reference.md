@@ -1,0 +1,3 @@
+# pass by reference
+
+array কে argument দিয়ে parameter এ pass করলে সেটা pass by reference হিসেবে যায় তাই user defined function এর ভেতরে array এর ভ্যালু manipulation হলে সেটা function এর বাইরেও এক্সেস করা যায়।&#x20;

@@ -10,9 +10,9 @@ Function Design:
 
 variable এর মতই function এর একটা identifier বা নাম দিতে হয় এবং naming conventions গুলো variable এর নিয়ম অনুযায়ীই হবে।&#x20;
 
-function দিয়ে কোনো কাজ করিয়ে নেয়ার জন্য তাকে input দিতে হবে, এই input কে parameter বলা হয়।  অন্যভাবে বললে function declaration এবং definition এর সময়কার variable কে parameter বলে।&#x20;
+function দিয়ে কোনো কাজ করিয়ে নেয়ার জন্য তাকে input দিতে হবে, এই input কে parameter/formal parameter বলা হয়।  অন্যভাবে বললে function declaration এবং definition এর সময়কার variable কে parameter বলে।&#x20;
 
-function এর parameter কে function calling এর সময় argument দ্বারা value input দেয়া হয়। তাই Function call এর সময়কার variable কে argument বলে।
+function এর parameter কে function calling এর সময় argument দ্বারা value input দেয়া হয়। তাই Function call এর সময়কার variable কে argument/actual parameter বলে।
 
 &#x20;function দিয়ে কাজ করানোর পর সে একটা ভ্যালু output হিসেবে return করবে, এজন্য function কোন ডাটা টাইপে return করবে সেটাও বলে দিতে হয়।
 
@@ -73,7 +73,7 @@ int triangular_num(int n) {
     // example: if num=5, 1+2+3+4+5= 15
   }
   printf("%d\n", sum);
-  return n;
+  return sum;
 }
 
 int main() {
@@ -87,7 +87,7 @@ int main() {
 ```
 
 {% hint style="info" %}
-function ব্যবহার করে factorial(upto 65) বের করার প্রোগ্রাম:
+function ব্যবহার করে factorial(up-to 65) বের করার প্রোগ্রাম:
 {% endhint %}
 
 ```c
@@ -100,7 +100,7 @@ int factorial(int n) {
     // factorial calculator upto 65
   }
   printf("%llu\n", multiply);
-  return n;
+  return multiply;
 }
 
 int main() {
