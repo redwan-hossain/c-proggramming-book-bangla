@@ -26,6 +26,8 @@
 * [function](function/README.md)
   * [pass by value](function/pass-by-value.md)
   * [pass by reference](function/pass-by-reference.md)
+  * [static function](function/static-function.md)
+* [recursion](recursion.md)
 * [array](array/README.md)
   * [one dimensional array](array/one-dimensional-array.md)
 * [string](string/README.md)
