@@ -30,6 +30,7 @@
 * [recursion](recursion.md)
 * [array](array/README.md)
   * [one dimensional array](array/one-dimensional-array.md)
+  * [array in memory](array/array-in-memory.md)
 * [string](string/README.md)
   * [taking string input](string/taking-string-input.md)
   * [counting string length](string/counting-string-length.md)
