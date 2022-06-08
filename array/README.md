@@ -275,3 +275,29 @@ int main() {
   return 0;
 }
 ```
+
+{% hint style="info" %}
+Array কে counter হিসেবে ব্যবহার করে 1-5 rating calculate করার প্রোগ্রাম:
+{% endhint %}
+
+```c
+#include <stdio.h>
+
+void main(void) {
+  int n;
+  scanf("%d", &n);
+  int arr[n], temp;
+  int count[6] = {0};
+
+  for (int i = 0; i < n; i++) {
+    scanf("%d", &arr[i]);
+    temp = arr[i];
+    ++count[temp];
+  }
+  for (int i = 1; i < 6; i++) {
+    if (count[i] != 0) {
+      printf("%d->  %d\n", i, count[i]);
+    }
+  }
+}
+```
