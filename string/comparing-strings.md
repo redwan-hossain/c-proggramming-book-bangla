@@ -4,6 +4,15 @@
 
 string কে lexicographical order(ডিকশনারি এর মতো) এ সাজানো যায়।&#x20;
 
+```c
+যখন উভয় string এর index সমান হয় তখন:
+is a[0] = b[0]? সত্য হলে সামনে আগাবে। 
+is a[1] = b[1]? সত্য হলে সামনে আগাবে। 
+is a[2] = b[2]? সত্য না হলে থেমে যাবে। 
+এরপর lexicographical order দেখবে কে ছোট। 
+যে string এ ছোট index value পাবে সেটাকেই ছোট বলে নির্ধারণ করা হবে।
+```
+
 {% hint style="info" %}
 find first mismatch
 
