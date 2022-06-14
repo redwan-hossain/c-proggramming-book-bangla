@@ -1,6 +1,6 @@
 # for loop
 
-variable গুলো for loop এর বাইরে ডিক্লেয়ার করা উচিত যাতে যেকোনো জায়গা থেকে access করা যায়। বাইরে declare করলে সেটা  globally scoped হয়, আর for loop এর ভেতর declare করলে সেটা সেই loop এর ভেতর locally scoped থাকে।&#x20;
+variable গুলো for loop এর বাইরে ডিক্লেয়ার করলে যেকোনো জায়গা থেকে access করা যায়। বাইরে declare করলে সেটা  globally scoped হয়, আর for loop এর ভেতর declare করলে সেটা সেই loop এর ভেতর locally scoped থাকে।&#x20;
 
 ```c
 #include <stdio.h>

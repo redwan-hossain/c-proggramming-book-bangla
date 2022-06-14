@@ -1,5 +1,7 @@
 # while loop
 
+while loop এ for loop এর মত control variable, update statement থাকে না। এখানে শুধু conditional checking expression অংশটা থাকে এবং সাধারণত একটাই expression থাকে। তবে চাইলে একাধিক expression দেয়া যায় তবে মূল expression হিসেবে একদম শেষের টা কাজ করবে। যেমন:  while <mark style="color:red;">**`(a++, b--)`**</mark> এখানে <mark style="color:red;">**`b--`**</mark> অংশটার উপর লুপ কতক্ষণ চলবে সেটা নির্ভর করবে।
+
 নামতা লেখার প্রোগ্রাম-&#x20;
 
 ```c
