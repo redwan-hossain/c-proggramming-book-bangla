@@ -15,6 +15,8 @@ Function Design:
 
 অনেক সময় দেখা যায় loop এর ভেতর কোনো একটা কাজ হয়ে গেলে লুপের পরবর্তী statement গুলো execute করার প্রয়োজন হয়না। সেসব ক্ষেত্রে ভ্যালুবিহীন <mark style="color:red;">**`return;`**</mark> করলে function এর কাজ সেখানেই শেষ হয়ে যায় কারণ function যখন return করে ফেলে তার আর কোনো কাজ থাকে না।
 
+parameter এর জায়গা খালি রাখলে argument pass করলেও কোন error দিবে না কারণ argument receive হবার পর যখন দেখবে সেগুলো save হবার মত কোনো variable&#x20;
+
 
 
 ```c
