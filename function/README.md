@@ -1,8 +1,6 @@
 # function
 
-Code re-usability, easier debugging, less error prone ইত্যাদি সুবিধার জন্য function ব্যবহার করা হয়।&#x20;
-
-dry- don't repeat yourself এই প্রিন্সিপাল function এর মাধ্যমে implement করা সম্ভব।&#x20;
+Code re-usability, easier debugging, less error prone ইত্যাদি সুবিধার জন্য function ব্যবহার করা হয়। **don't repeat yourself(dry)** এই প্রিন্সিপাল function এর মাধ্যমে implement করা সম্ভব।  একটা function কে শুধুমাত্র একটা কাজের জন্যই বরাদ্ধ রাখা উচিত এবং function এর নাম সেই কাজের জন্য অর্থবোধ্য হওয়া উচিত।&#x20;
 
 {% hint style="info" %}
 Function Design:
@@ -13,9 +11,9 @@ Function Design:
 * function এর parameter কে function calling এর সময় argument দ্বারা value input দেয়া হয়। তাই Function call এর সময়কার variable কে argument/actual parameter বলে। তবে parameter ছাড়াও function হয় এবং function এর ভেতরে input নেয়া যায়।
 * &#x20;function দিয়ে কাজ করানোর পর সে একটা ভ্যালু output হিসেবে return করবে, এজন্য function কোন ডাটা টাইপে return করবে সেটাও বলে দিতে হয়। চাইলে value return না নিয়ে function এর ভেতরেই output দেখানো যায়।
 
-Function এর ভেতর আউটপুট দেয়া উচিত না, বরং function calling side এ আউটপুট দেয়া উচিত। একটা function কে শুধুমাত্র একটা কাজের জন্যই বরাদ্ধ রাখা উচিত এবং function এর নাম সেই কাজের জন্য অর্থবোধ্য হওয়া উচিত।
 
 
+অনেক সময় দেখা যায় loop এর ভেতর কোনো একটা কাজ হয়ে গেলে লুপের পরবর্তী statement গুলো execute করার প্রয়োজন হয়না। সেসব ক্ষেত্রে ভ্যালুবিহীন <mark style="color:red;">**`return;`**</mark> করলে function এর কাজ সেখানেই শেষ হয়ে যায় কারণ function যখন return করে ফেলে তার আর কোনো কাজ থাকে না।
 
 
 
