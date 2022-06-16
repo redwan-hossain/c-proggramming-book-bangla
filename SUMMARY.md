@@ -37,4 +37,5 @@
   * [copy string to another string](string/copy-string-to-another-string.md)
   * [concatenation of string](string/concatenation-of-string.md)
   * [comparing strings](string/comparing-strings.md)
-* [pointer](pointer.md)
+* [pointer](pointer/README.md)
+  * [array behind the scene](pointer/array-behind-the-scene.md)
