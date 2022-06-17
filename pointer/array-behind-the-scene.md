@@ -12,7 +12,9 @@ int main() {
 }
 ```
 
-array by default pass by reference অর্থাৎ function এর argument হিসেবে array pass করলে সে value না পাঠায়ে memory address পাঠায়। array যেহেতু function parameter এ behind the scene pointer নিয়ে কাজ করে, তাই <mark style="color:red;">**`int arr[]`**</mark> এর পরিবর্তে চাইলে <mark style="color:red;">**`int *arr`**</mark> লিখা যাবে যেটা <mark style="color:red;">**`arr[0]`**</mark> এর এড্রেস রিসিভ করবে। তাহলে array এর পরবর্তী element গুলোর address কিভাবে পাবে? <mark style="color:red;">**`address_of_arr[0]+(data_type_size*index_no)`**</mark> এই সূত্র অনুযায়ী বাকি element গুলোর address ক্যালকুলেশন হবে।
+array by default pass by reference অর্থাৎ function এর argument হিসেবে array pass করলে সে value না পাঠায়ে memory address পাঠায়। array যেহেতু function parameter এ behind the scene pointer নিয়ে কাজ করে, তাই <mark style="color:red;">**`int arr[]`**</mark> এর পরিবর্তে চাইলে <mark style="color:red;">**`int *arr`**</mark> লিখা যাবে যেটা <mark style="color:red;">**`arr[0]`**</mark> এর এড্রেস রিসিভ করবে। তাহলে array এর পরবর্তী element গুলোর address কিভাবে পাবে? <mark style="color:red;">**`address_of_arr[0]+(data_type_size*index_no)`**</mark> এই সূত্র অনুযায়ী বাকি element গুলোর address ক্যালকুলেশন হবে।&#x20;
+
+যেহেতু শুধুমাত্র <mark style="color:red;">**`arr[0]`**</mark> এর এড্রেস পাঠানো হয়, কখনো যদি array এর size নিয়ে কাজ করতে হয় তাহলে অবশ্যই parameter এ size টাও পাঠাতে হবে কারণ compiler যানে না যে তাকে size বের করতে বললে কখন থামতে হবে। string এর ক্ষেত্রে null chracter এ গিয়ে compiler থেমে যায় তাই string parameter হিসেবে দিলে size না দিলেও চলবে কিন্ত array তে এই সুযোগ নাই।
 
 ```c
 #include <stdio.h>
