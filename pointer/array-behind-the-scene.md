@@ -11,3 +11,30 @@ int main() {
   return 0;
 }
 ```
+
+array by default pass by reference অর্থাৎ function এর argument হিসেবে array pass করলে সে value না পাঠায়ে memory address পাঠায়। array যেহেতু function parameter এ behind the scene pointer নিয়ে কাজ করে, তাই <mark style="color:red;">**`int arr[]`**</mark> এর পরিবর্তে চাইলে <mark style="color:red;">**`int *arr`**</mark> লিখা যাবে যেটা <mark style="color:red;">**`arr[0]`**</mark> এর এড্রেস রিসিভ করবে। তাহলে array এর পরবর্তী element গুলোর address কিভাবে পাবে? <mark style="color:red;">**`address_of_arr[0]+(data_type_size*index_no)`**</mark> এই সূত্র অনুযায়ী বাকি element গুলোর address ক্যালকুলেশন হবে।
+
+```c
+#include <stdio.h>
+
+void changeMe(int *arr) {
+  // using pointer to receive the address of arr[0]
+  // int *arr is similar to int arr[]
+  // address_of_arr[0]+(data_type_size*index_no) this is the formula
+  // to calculate the next array element's address
+
+  arr[1] = 50;       // traditional norm to access array by index number
+  *(arr + 2) = 100;  // accessing array index by pointer
+}
+
+int main() {
+  int arr[3] = {3, 4, 10};
+  changeMe(&arr[0]);  // changeMe(arr);
+                      // sending the address of arr[0]
+                      // int &arr[0] is similar to arr
+
+  printf("%d %d\n", arr[1], arr[2]);
+
+  return 0;
+}
+```
