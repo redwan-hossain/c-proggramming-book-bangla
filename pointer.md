@@ -5,11 +5,11 @@
 যেমনঃ <mark style="color:red;">**`int x= 5;`**</mark> এখানে x এর জন্য 4 byte জায়গা বরাদ্ধ হবে, x এর কাছে শুধু প্রথম বাইট এর address টা থাকে, বাকিগুলো data type অনুযায়ী calculate করে নেয়া হয়। x এর range 100 থেকে 103 পর্যন্ত হবে। pointer variable এর কাজ হলো সে সাধারণ variable এর address store করে রাখে, আরো বিস্তারিত বললে শুধু প্রথম বাইট এর address টা store করে রাখে বাকিটা data type অনুযায়ী calculate করে নেয়।
 
 {% hint style="info" %}
-Syntax- <mark style="color:red;">`data_type *pointer_name`</mark>
+Syntax- <mark style="color:red;">`data_type *pointer_name`</mark>` ``এখানে`` `<mark style="color:red;">`*`</mark>`data_type কে মডিফাই করে pointer variable বানিয়ে ফেলে।`
 {% endhint %}
 
 {% hint style="warning" %}
-মনে রাখতে হবে যখন asterik symbol<mark style="color:red;">`*`</mark> এর আশেপাশে যখন কোনো data type keyword থাকেনা তখন<mark style="color:red;">`*`</mark> এটাকে deteference operator বলে। deteference operator দিয়ে pointer যাকে point করছে তার value access করা হয়।
+মনে রাখতে হবে যখন asterik symbol<mark style="color:red;">`*`</mark> এর আশেপাশে যখন কোনো data type keyword থাকেনা তখন<mark style="color:red;">`*`</mark> এটাকে deteference operator বলে। deteference operator দিয়ে pointer যাকে point করছে তার value access করা হয় (go the address and grab the value). এটাকে pass by reference বলে।
 {% endhint %}
 
 Pointer variable এর নিজস্ব data type থাকেনা । তাই pointer declare এর সময় যে `data_type` দিতে হয় সেটা মূলত pointer যাকে point করবে সেটার data\_type হয়। এই data type তাহলে কেন দরকার?  pointer variable এ শুধুমাত্র প্রথম বাইট এর address টা জমা থাকে। বাকি বাইট গুলোর হিসাব-নিকাশ করার জন্য data type দরকার হয় কারণ কোন variable কত বাইট সেটা data type দেখে বোঝা যায়। de-reference operator `*` দিয়ে pointer variable এ যে address জমা রাখা আছে সেই address এর ভ্যালু access করতে কাজে লাগে। যেমন:&#x20;
