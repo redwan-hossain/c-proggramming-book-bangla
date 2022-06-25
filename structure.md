@@ -8,6 +8,21 @@
 
 </details>
 
+![](.gitbook/assets/structure.png)
+
+```c
+struct student {
+//basic syntax
+};
+
+struct student {
+  char name[50];
+  int id;
+  int roll;
+  // members of the structure
+}//variable can be created here;
+```
+
 <details>
 
 <summary>structure এর structure</summary>
