@@ -41,4 +41,5 @@
   * [constant pointer](pointer/constant-pointer.md)
   * [array behind the scene](pointer/array-behind-the-scene.md)
   * [pointer in function](pointer/pointer-in-function.md)
-* [structure](structure.md)
+* [structure](structure/README.md)
+  * [structure variable](structure/structure-variable.md)

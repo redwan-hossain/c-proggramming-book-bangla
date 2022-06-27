@@ -8,7 +8,7 @@
 
 </details>
 
-![](.gitbook/assets/structure.png)
+![](../.gitbook/assets/structure.png)
 
 ```c
 struct student {
