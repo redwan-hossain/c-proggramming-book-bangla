@@ -4,7 +4,6 @@ array কে argument দিয়ে parameter এ pass করলে সেটা 
 
 ```
 #include "iostream"
-#include "string"
 
 using namespace std;
 
@@ -14,8 +13,7 @@ void trying(int *n) {
 
 int main() {
   int n = 10;
-  int *ptr = &n;
-  trying(ptr);
+  trying(&n);
 
   cout << n << endl;
 }
