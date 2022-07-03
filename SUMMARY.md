@@ -43,3 +43,4 @@
   * [pointer in function](pointer/pointer-in-function.md)
 * [structure](structure/README.md)
   * [structure variable](structure/structure-variable.md)
+  * [array of structure](structure/array-of-structure.md)
