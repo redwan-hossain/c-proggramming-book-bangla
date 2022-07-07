@@ -15,6 +15,9 @@ int main() {
   FILE *outputFile;
 
   inputFile = fopen("in.txt", "r");
+    if (inputFile == NULL) {
+    return 0;
+  }
   outputFile = fopen("out.txt", "w");
 
   while (true) {
