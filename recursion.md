@@ -38,7 +38,7 @@ main function ended
 
 ![](<.gitbook/assets/stack (1).png>)
 
-n এর মান যখন 4 হবে তখন ই base condition এর if block execute হয়ে user function with 4 কে return করে শেষ করে দিবে এতে করে stack memory থেকে user function with 4 destroy হয়ে যাবে। অন্য সব function গুলো কিন্ত  `user(n + 1);` এই জায়গায় এসে hold হয়ে ছিল। এবার একে একে  user function with 3,  user function with 2,  user function with 1 এগুলো `user(n + 1);` এখানে এসে resume হবে এবং যখন দেখবে তার নিচে আর কিছু নাই তখন সবগুলো একে একে destroy হয়ে যাবে এবং সবার শেষে main function destroy হয়ে যাবে।
+behind the scene, n এর মান যখন 4 হবে তখন ই base condition এর if block execute হয়ে user function with 4 কে return করে শেষ করে দিবে এতে করে stack memory থেকে user function with 4 destroy হয়ে যাবে। অন্য সব function গুলো কিন্ত  `user(n + 1);` এই জায়গায় এসে hold হয়ে ছিল। এবার একে একে  user function with 3,  user function with 2,  user function with 1 এগুলো `user(n + 1);` এখানে এসে resume হয়ে নিচের দিকে যাবে এবং "resumed" print করবে এরপর যখন দেখবে নিচে আর কিছু নাই তখন destroy হয়ে যাবে এবং সবার শেষে main function destroy হয়ে যাবে।
 
 ```cpp
 #include "iostream"
@@ -49,16 +49,42 @@ void user(int n) {
   if (n == 4) {
     return;
   }
-
-  cout << n << " ";
+  cout << n << endl;
   user(n + 1);
   // recursion
+  cout << "resumed" << endl;
 }
 
 int main() {
   cout << "main function started" << endl;
   user(1);
-  cout << endl << "main function ended" << endl;
+  cout << "main function ended" << endl;
+  return 0;
+}
+```
+
+hold and resume এর ব্যাপার টা বুঝতে আরেকটা কোড দেখা যাক। এখানে n এর value print করার আগেই recursion statement দেয়া হয়েছে। user function with 1- user function with 2 - user function with 3- user function with 4 এভাবে সিরিয়ালই call হতে থাকবে। আবারো একই ডায়াগ্রাম দেখে ব্যাপার টা বুঝতে হবে।
+
+![](<.gitbook/assets/stack (1).png>)
+
+&#x20;n এর মান যখন 4 হবে তখন ই base condition এর if block execute হয়ে user function with 4 কে return করে শেষ করে দিবে।  stack memory তে user function with 4 বলে এখন আর কিছু থাকবে না। এইবার অন্য সব function গুলো একে একে resume হবে। খেয়াল করলে দেখা যাবে function গুলো 3-2-1 এই সিরিয়ালে stack memory তে আছে এবং resume হবার সময় এভাবেই হবে তাই n এর value উল্টা হয়ে print হবে।
+
+```cpp
+#include "iostream"
+using namespace std;
+
+void user(int n) {
+  if (n == 4) {
+    return;
+  }
+  user(n + 1);
+  cout << n << endl;
+}
+
+int main() {
+  cout << "main function started" << endl;
+  user(1);
+  cout << "main function ended" << endl;
   return 0;
 }
 ```
