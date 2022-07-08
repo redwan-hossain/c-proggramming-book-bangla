@@ -41,6 +41,7 @@
   * [constant pointer](pointer/constant-pointer.md)
   * [array behind the scene](pointer/array-behind-the-scene.md)
   * [pointer in function](pointer/pointer-in-function.md)
+  * [null and void pointer](pointer/null-and-void-pointer.md)
 * [structure](structure/README.md)
   * [structure variable](structure/structure-variable.md)
   * [array of structure](structure/array-of-structure.md)
