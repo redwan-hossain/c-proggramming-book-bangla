@@ -8,6 +8,22 @@ array initialize বলতে array declare করার পর তার initia
 One dimensional array initialize করার নিয়ম-
 {% endhint %}
 
+array index এর value সেট করতে constant value বাদেও অন্যে variable এর নাম, expression, এবং function call করা যায়।
+
+```cpp
+#include "stdio.h"
+
+int func(int n) {
+  return n * n;
+}
+
+int main() {
+  int num = 20;
+  int arr[] = {num, func(2), 5 - 2};
+  return 0;
+}
+```
+
 ```c
 int array1[3]= {1,2,3};
 ```
