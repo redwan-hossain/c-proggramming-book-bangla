@@ -8,6 +8,7 @@
   * [variable scope](variable/variable-scope.md)
   * [type conversion/casting](variable/type-conversion-casting.md)
   * [variable scanning](variable/variable-scanning.md)
+  * [static variable](variable/static-variable.md)
 * [operator](operator/README.md)
   * [type casting operator](operator/type-casting-operator.md)
   * [arithmetic operator](operator/arithmetic-operator.md)
