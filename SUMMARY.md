@@ -19,6 +19,7 @@
 * [if, else if, else](if-else-else-if-switch..case-statement.md)
   * [switch statement](if-else-else-if-switch..case-statement/switch-statement.md)
 * [loop](loop/README.md)
+  * [pre or post increment in loop](loop/pre-or-post-increment-in-loop.md)
   * [while loop](loop/while-loop.md)
   * [for loop](loop/for-loop.md)
   * [do while loop](loop/do-while-loop.md)
