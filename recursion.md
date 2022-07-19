@@ -1,6 +1,6 @@
 # recursion
 
-যখন একটা function নিজেকে directly অথবা indirectly call করে তাকে recursion বলে। কাজকে ছোট করার জন্য recursion ব্যবহার করা হয়। recursion এ একটা কাজ নিজে করে দিতে হয় এবং পরের কাজের শুরু টা recursion কে দিয়ে দিতে হয়। recursion বোঝার জন্য stack বোঝা জরুরি কারণ যেকোনো function call করা হলেই সেটা stack memory তে চলে যায়।&#x20;
+যখন একটা function নিজেকে directly অথবা indirectly call করে তাকে recursion বলে। কাজকে ছোট করার জন্য recursion ব্যবহার করা হয়। **recursion এ একটা কাজ নিজে করে দিতে হয় এবং পরের কাজের শুরু টা recursion কে দিয়ে দিতে হয়।** recursion বোঝার জন্য stack বোঝা জরুরি কারণ যেকোনো function call করা হলেই সেটা stack memory তে চলে যায়।&#x20;
 
 ![](.gitbook/assets/stack.png)
 
