@@ -2,7 +2,7 @@
 
 যখন একটা function নিজেকে directly অথবা indirectly call করে তাকে recursion বলে। কাজকে ছোট করার জন্য recursion ব্যবহার করা হয়। **recursion এ একটা কাজ নিজে করে দিতে হয় এবং পরের কাজের শুরু টা recursion কে দিয়ে দিতে হয়।** recursion বোঝার জন্য stack বোঝা জরুরি কারণ যেকোনো function call করা হলেই সেটা stack memory তে চলে যায়।&#x20;
 
-![](.gitbook/assets/stack.png)
+![](../.gitbook/assets/stack.png)
 
 ```cpp
 #include "iostream"
@@ -36,7 +36,7 @@ main function ended
 
 এখন base condition apply করার পালা। এটা মূলত একটা if block হয়ে থাকে। নিচের কোডে n এর argument 1 দিয়ে main function থেকে user function কে call করা হয়েছে। এরপর  base condition হিসেবে বলা হয়েছে n এর value যদি 4 হয় তাহলে return করে function শেষ করে দাও। যেহেতু বর্তমানে n এর মান হলো 1, তাই এই if block টা execute হবে না। এর পরের লাইনে n এর value print করতে বলা হয়েছে। এর পরের লাইনেই আমাদের recursion এর খেলা শুরু, n এর সাথে 1 যোগ করে  user function কে আবার call করা হয়েছে। এভাবে user function নিজেকে বার বার call করতেই থাকবে এবং stack memory তে নিচের ডায়াগ্রাম এর মত অবস্থা হবে।
 
-![](<.gitbook/assets/stack (1).png>)
+![](<../.gitbook/assets/stack (1).png>)
 
 behind the scene, n এর মান যখন 4 হবে তখন ই base condition এর if block execute হয়ে user function with 4 কে return করে শেষ করে দিবে এতে করে stack memory থেকে user function with 4 destroy হয়ে যাবে। অন্য সব function গুলো কিন্ত  `user(n + 1);` এই জায়গায় এসে hold হয়ে ছিল। এবার একে একে  user function with 3,  user function with 2,  user function with 1 এগুলো `user(n + 1);` এখানে এসে resume হয়ে নিচের দিকে যাবে এবং "resumed" print করবে এরপর যখন দেখবে নিচে আর কিছু নাই তখন destroy হয়ে যাবে এবং সবার শেষে main function destroy হয়ে যাবে।
 
@@ -65,7 +65,7 @@ int main() {
 
 hold and resume এর ব্যাপার টা বুঝতে আরেকটা কোড দেখা যাক। এখানে n এর value print করার আগেই recursion statement দেয়া হয়েছে। user function with 1- user function with 2 - user function with 3- user function with 4 এভাবে সিরিয়ালই call হতে থাকবে। আবারো একই ডায়াগ্রাম দেখে ব্যাপার টা বুঝতে হবে।
 
-![](<.gitbook/assets/stack (1).png>)
+![](<../.gitbook/assets/stack (1).png>)
 
 &#x20;n এর মান যখন 4 হবে তখন ই base condition এর if block execute হয়ে user function with 4 কে return করে শেষ করে দিবে।  stack memory তে user function with 4 বলে এখন আর কিছু থাকবে না। এইবার অন্য সব function গুলো একে একে resume হবে। খেয়াল করলে দেখা যাবে function গুলো 3-2-1 এই সিরিয়ালে stack memory তে আছে এবং resume হবার সময় এভাবেই হবে তাই n এর value উল্টা হয়ে print হবে।
 
