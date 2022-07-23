@@ -10,12 +10,13 @@ Function Design:
 * function দিয়ে কোনো কাজ করিয়ে নেয়ার জন্য তাকে input দিতে হবে, এই input কে parameter/formal parameter বলা হয়। অন্যভাবে বললে function declaration এবং definition এর সময়কার variable কে parameter বলে।&#x20;
 * function এর parameter কে function calling এর সময় argument দ্বারা value input দেয়া হয়। তাই Function call এর সময়কার variable কে argument/actual parameter বলে। তবে parameter ছাড়াও function হয় এবং function এর ভেতরে input নেয়া যায়।
 * &#x20;function দিয়ে কাজ করানোর পর সে একটা ভ্যালু output হিসেবে return করবে, এজন্য function কোন ডাটা টাইপে return করবে সেটাও বলে দিতে হয়। চাইলে value return না নিয়ে function এর ভেতরেই output দেখানো যায়।
+* **উল্লেখ্য যে, যখন function শুধুমাত্র declare করা হয় তখন সেটাকে function prototype ও বলে।** A function prototype is simply the declaration of a function that specifies function's name, parameters and return type while omitting the function body (statements inside the function).
 
 
 
 অনেক সময় দেখা যায় loop এর ভেতর কোনো একটা কাজ হয়ে গেলে লুপের পরবর্তী statement গুলো execute করার প্রয়োজন হয়না। সেসব ক্ষেত্রে ভ্যালুবিহীন <mark style="color:red;">**`return;`**</mark> করলে function এর কাজ সেখানেই শেষ হয়ে যায় কারণ function যখন return করে ফেলে তার আর কোনো কাজ থাকে না।
 
-parameter এর জায়গা খালি রাখলে argument pass করলেও কোন error দিবে না কারণ argument receive হবার পর যখন দেখবে সেগুলো save হবার মত কোনো variable&#x20;
+parameter এর জায়গা খালি রাখলে argument pass করলেও কোন error দিবে না কারণ argument receive হবার পর যখন দেখবে সেগুলো save হবার মত কোনো variable নাই তখন সেটা destroy হয়ে যাবে।
 
 
 
