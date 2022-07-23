@@ -31,6 +31,7 @@
   * [static function](function/static-function.md)
 * [recursion](recursion/README.md)
   * [think in a recursive way](recursion/think-in-a-recursive-way.md)
+  * [types of recursion](recursion/types-of-recursion.md)
 * [array](array/README.md)
   * [one dimensional array](array/one-dimensional-array.md)
   * [array in memory](array/array-in-memory.md)
